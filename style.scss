@@ -1,0 +1,95 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f2f2f2;
+  font-family: 'Poppins', sans-serif;
+}
+
+header {
+  background-color: #fff;
+  padding: 1rem;
+  text-align: center;
+
+  #form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin: 1rem 0;
+
+    h1 {
+      font-size: 2rem;
+    }
+
+    input {
+      padding: 0.5rem;
+      border: 1px solid #ccc;
+      outline: none;
+      border-radius: 4px;
+    }
+  }
+}
+
+main {
+  max-width: 400px;
+  margin: 2rem auto;
+
+  .user-card {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+
+    .avatar {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      margin-bottom: 1rem;
+    }
+
+    .username {
+      font-size: 1.5rem;
+      margin-bottom: 0.3rem;
+    }
+
+    .profile-link {
+      font-size: 0.9rem;
+      color: #0077ff;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    .info {
+      display: flex;
+      justify-content: space-between;
+      margin: 1.5rem 0;
+
+      div {
+        flex: 1;
+
+        span {
+          display: block;
+          font-size: 0.8rem;
+          color: #777;
+        }
+
+        strong {
+          font-size: 1.2rem;
+        }
+      }
+    }
+
+    .date {
+      font-size: 0.85rem;
+      color: #555;
+    }
+  }
+}
